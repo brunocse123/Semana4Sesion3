@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        padding: 90px;
+        width: 100px;
+        margin: auto;
+      }
+
+      .dino:hover{
+          transform-origin: left;
+      }
+
+      .Cabeza{
+        animation-name: MoverCabeza;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes MoverCabeza {
+        from {
+          transform: rotate(0deg)
+        }
+
+        to {
+          transform: rotate(-15deg);
+        }
+      }
+
+
+      .Cabeza1 {
+        background-color: gray;
+        width: 160px;
+        height: 20px;
+        left: 20px;
+        position: relative;
+      }
+      .Cabeza2 {
+        background-color: gray;
+        width: 200px;
+        height: 20px;
+      }
+      .Ojo {
+        background-color: white;
+        width: 20px;
+        height: 20px;
+        left: 50px;
+        position: relative;
+      }
+      .Cabeza3 {
+        background-color: gray;
+        width: 200px;
+        height: 20px;
+      }
+      .Cabeza4 {
+        background-color: gray;
+        width: 200px;
+        height: 20px;
+      }
+      .Boca1 {
+        background-color: gray;
+        width: 100px;
+        height: 20px;
+      }
+      .Boca2 {
+        background-color: gray;
+        width: 160px;
+        height: 20px;
+        animation-name: MoverBoca;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes MoverBoca {
+        from {
+          transform: translateY(5px);
+        }
+
+        to {
+          transform: translateY(0px);
+        }
+      }
+
+      .Cuello1 {
+        background-color: gray;
+        width: 100px;
+        height: 20px;
+        left: -20px;
+        position: relative;
+      }
+      .Cuello2 {
+        background-color: gray;
+        width: 110px;
+        height: 20px;
+        left: -30px;
+        position: relative;
+      }
+      .Cuerpo1 {
+        background-color: gray;
+        width: 180px;
+        height: 20px;
+        left: -50px;
+        position: relative;
+      }
+      .Cuerpo2 {
+        background-color: gray;
+        width: 180px;
+        height: 20px;
+        left: -100px;
+        position: relative;
+      }
+      .Mano1 {
+        background-color: gray;
+        width: 20px;
+        height: 20px;
+        left: 210px;
+        position: relative;
+        animation-name: MoverMano;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      .Chela{
+        background-color: #ff9600;
+        width: 40px;
+        height: 60px;
+        left: 0px;
+        top: -40px;
+        position: relative;
+        transform: rotate(20deg);
+      }
+
+      @keyframes MoverMano {
+        from {
+          transform: rotate(0deg)
+        }
+
+        to {
+          transform: rotate(-15deg);
+        }
+      }
+
+      .Cuerpo3 {
+        background-color: gray;
+        width: 230px;
+        height: 20px;
+        left: -150px;
+        position: relative;
+      }
+      .Cuerpo4 {
+        background-color: gray;
+        width: 260px;
+        height: 20px;
+        left: -180px;
+        position: relative;
+      }
+
+      .Cola1 {
+        width: 20px;
+        height: 90px;
+        background-color: gray;
+        position: relative;
+        top: -80px;
+        left: -20px;
+      }
+
+      .Cola2 {
+        width: 20px;
+        height: 90px;
+        background-color: gray;
+        position: relative;
+        top: -150px;
+        left: 0px;
+      }
+
+      .Cola3 {
+        width: 20px;
+        height: 90px;
+        background-color: gray;
+        position: relative;
+        top: -220px;
+        left: 20px;
+      }
+
+      .Panza1 {
+        background-color: gray;
+        width: 220px;
+        height: 20px;
+        left: -160px;
+        position: relative;
+      }
+
+      .Panza2 {
+        background-color: gray;
+        width: 180px;
+        height: 20px;
+        left: -140px;
+        position: relative;
+      }
+
+      .Panza3 {
+        background-color: gray;
+        width: 140px;
+        height: 20px;
+        left: -120px;
+        position: relative;
+      }
+
+      .Panza4 {
+        background-color: gray;
+        width: 100px;
+        height: 20px;
+        left: -100px;
+        position: relative;
+      }
+
+      .Pierna1 {
+        background-color: gray;
+        width: 20px;
+        height: 60px;
+        left: -100px;
+        position: relative;
+        animation-name: MoverPierna;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      .Pierna2 {
+        background-color: gray;
+        width: 20px;
+        height: 60px;
+        left: -20px;
+        top: -60px;
+        position: relative;
+        animation-name: MoverPierna;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+      }
+
+      .Pie1 {
+        background-color: blue;
+        width: 40px;
+        height: 20px;
+        left: 0px;
+        top:  40px;
+        position: relative;
+      }
+
+      @keyframes MoverPierna {
+        from {
+          transform: translateX(20px);
+        }
+
+        to {
+          transform: translateX(0px);
+        }
+      }
+
+      .Pie2 {
+        background-color: blue;
+        width: 40px;
+        height: 20px;
+        left: 0px;
+        top:  40px;
+        position: relative;
+      }
+      
+    </style>
+  </head>
+  <body>
+      <div class="Dino">
+
+        <div class="Cabeza">
+            <div class="Cabeza1"></div>
+            <div class="Cabeza2"><div class="Ojo"></div></div>
+            <div class="Cabeza3"></div>
+            <div class="Cabeza4"></div>
+            <div class="Boca1"></div>
+            <div class="Boca2"></div>
+        </div>
+
+
+   
+        <div class="Cuello1"></div>
+        <div class="Cuello2"></div>
+        <div class="Cuerpo1"></div>
+        <div class="Cuerpo2"><div class="Mano1"><div class="Chela"></div></div></div>
+
+        <div class="Cuerpo3"></div>
+    
+        <div class="Cuerpo4">
+          <div class="Cola1"></div>
+          <div class="Cola2"></div>
+          <div class="Cola3"></div>
+        </div>
+    
+        <div class="Panza1"></div>
+        <div class="Panza2"></div>
+        <div class="Panza3"></div>
+        <div class="Panza4"></div>
+    
+        <div class="Pierna1"><div class="Pie1"></div></div>
+        <div class="Pierna2"><div class="Pie2"></div></div>
+      </div>
+   
+  </body>
+</html>

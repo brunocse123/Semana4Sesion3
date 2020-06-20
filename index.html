@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 100px;
+        height: 100px;
+        background: green;
+
+        border-top-left-radius: 300px;
+        border-bottom-right-radius: 300px;
+
+        box-shadow: 3px 2px 4px red, -10px -10px 4px blue;
+      }
+
+      section {
+        /*Ejex EjeY y Color*/
+        /*
+        text-shadow: 10px 20px 2px red;
+        */
+        /*transition: text-shadow 0.9s ease;*/
+
+        transition: text-shadow .9s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+
+      section:hover {
+        /*Ejex EjeY y Color*/
+        text-shadow: 10px 20px 2px red;
+      }
+
+      p{
+         animation-name: text ;
+         animation-duration: 4s;
+         animation-iteration-count: infinite;
+      }
+
+      @keyframes text{
+          from{
+              margin-right: -1000%;
+              color:red;
+          }
+
+          to{
+              margin-right: 0;
+              color: blue;
+          }
+      }
+    </style>
+  </head>
+  <body>
+    <div>Hola</div>
+
+    <div>shadow</div>
+    <br />
+    <section>
+      TextShadow
+    </section>
+
+    <p>
+      Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos
+      de texto. Lorem Ipsum ha sido el texto de relleno estándar de las
+      industrias desde el año 1500, cuando un impresor (N. del T. persona que se
+      dedica a la imprenta) desconocido usó una galería de textos y los mezcló
+      de tal manera que logró hacer un libro de textos especimen.
+    </p>
+  </body>
+</html>
